@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <title>LirePad- Create</title>
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
   <!-- CodeMirror -->
@@ -16,7 +17,7 @@
 
   <!-- Include example userlist script / CSS.
        Can be downloaded from: https://github.com/firebase/firepad/tree/master/examples/ -->
-  <script src="firepad-userlist.js"></script>
+  <script src="https://firepadv1.geoflydream.repl.co/pad/firepad-userlist.js"></script>
   <link rel="stylesheet" href="firepad-userlist.css" />
 
   <style>
@@ -36,6 +37,7 @@
 
 <body onload="init()">
   <div id="userlist"></div>
+  <div id="inviteLink"></div>
   <div id="firepad"></div>
 
   <script>
@@ -74,7 +76,7 @@
       //// Initialize contents.
       firepad.on('ready', function() {
         if (firepad.isHistoryEmpty()) {
-          firepad.setText('Check out the user list to the left!');
+          firepad.setText('Welcome to LirePad!');
         }
       });
     }
